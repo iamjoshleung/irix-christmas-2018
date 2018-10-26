@@ -188,6 +188,7 @@ var irixLogoWhite = document.querySelector('.js-irix-white');
 var sOneGlitters = document.querySelector('.js-s1-bg');
 var sOneBox = document.querySelector('.js-s1-box');
 var container = document.querySelector('.container');
+var scroll = new SmoothScroll('a[href*="#"]');
 window.addEventListener('load', function (_) {
   tl.to(loadScreen, 1, {
     opacity: 0,
@@ -245,7 +246,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51219" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62224" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
