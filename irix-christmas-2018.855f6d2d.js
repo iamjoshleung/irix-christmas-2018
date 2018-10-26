@@ -3,4 +3,4 @@ parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parcelRe
 },{"./img/bg-sprig.png":[["bg-sprig.3f4753b7.png","zPaq"],"zPaq"],"./img/bg_glitter_a.png":[["bg_glitter_a.a702d737.png","8pl+"],"8pl+"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./app.scss");var e=new TimelineMax,o=document.querySelector(".js-load-screen"),r=document.querySelector(".js-irix-white"),t=document.querySelector(".js-s1-bg"),c=document.querySelector(".js-s1-box"),n=document.querySelector(".container");window.addEventListener("load",function(n){e.to(o,1,{opacity:0,onComplete:function(e){return o.remove()}}).from(r,.8,{y:20,opacity:0}).from(t,.8,{y:50,opacity:0}).from(c,.8,{y:20,opacity:0});var i=new ScrollMagic.Controller,l=new TimelineMax;l.staggerFrom(document.querySelectorAll(".js-bg"),.5,{y:40,opacity:0},.2).staggerFrom(document.querySelectorAll(".js-work"),.5,{y:40,opacity:0},.2),new ScrollMagic.Scene({triggerElement:".js-arrow",triggerHook:0}).setTween(l).addTo(i)});
 },{"./app.scss":"R9Jc"}]},{},["Focm"], null)
-//# sourceMappingURL=/irix-christmas-2018.855f6d2d.map
+//# sourceMappingURL=irix-christmas-2018.855f6d2d.map
